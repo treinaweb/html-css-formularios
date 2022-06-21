@@ -13,17 +13,17 @@
         <button type="reset">limpar</button>
     </form>
 
-    <textarea cols="10" rows="5"></textarea>
+    <textarea cols="20" rows="5"></textarea>
 
     <form>
         <h3>Checkbox</h3>
         <input type="checkbox" id="amarelo">
         <label for="amarelo">amarelo </label>
         <br>
-        <input type="checkbox" id="vermelho">
+        <input type="checkbox" id="vermelho" checked>
         <label for="vermelho">vermelho</label>
         <br>
-        <input type="checkbox" id="azul">
+        <input type="checkbox" id="azul" disabled>
         <label for="azul">azul</label>
         <br>
         <button type="submit" >Enviar</button>
@@ -43,6 +43,11 @@
         <br>
         <button type="submit" >Enviar</button>
         <button type="reset">limpar</button>
+    </form>
+
+    <form>
+        <label for="arquivos">Insira seu arquivo</label>
+        <input type="file" id="arquivos" multiple>
     </form>
 
 </body>
