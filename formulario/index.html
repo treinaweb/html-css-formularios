@@ -4,61 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulários</title>
 </head>
 <body>
-    <form action="/" method="">
-        <input type="text" placeholder="Insira seu nome" required>
-        <input type="email" placeholder="Insira seu email">
-        <button type="submit" >Enviar</button>
-        <button type="reset">limpar</button>
+    <form class="form-user">
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu E-mail">
+        </div>
+        <div>
+            <label for="comentario">Deixe seu comentário</label>
+            <textarea name="comentario" id="comentario" rows="5" placeholder="Deixe seu comentário"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
     </form>
-
-    <!-- <textarea placeholder="Deixe seu comentário" name="comentario" cols="20" rows="5"></textarea> -->
-
-    <form>
-        <h3>Checkbox</h3>
-        <input type="checkbox" id="amarelo">
-        <label for="amarelo">amarelo </label>
-        <br>
-        <input type="checkbox" id="vermelho" checked>
-        <label for="vermelho">vermelho</label>
-        <br>
-        <input type="checkbox" id="azul" disabled>
-        <label for="azul">azul</label>
-        <br>
-        <button type="submit" >Enviar</button>
-        <button type="reset">limpar</button>
-    </form>
-
-    <form name="selecaoCores">
-        <h3>Radio</h3>
-        <input type="radio" id="amarelo" name="cores">
-        <label for="amarelo">amarelo </label>
-        <br>
-        <input type="radio" id="vermelho" name="cores">
-        <label for="vermelho">vermelho</label>
-        <br>
-        <input type="radio" id="azul" name="cores">
-        <label for="azul">azul</label>
-        <br>
-        <button type="submit" >Enviar</button>
-        <button type="reset">limpar</button>
-    </form>
-
-    <form>
-        <label for="arquivos">Insira seu arquivo</label>
-        <input type="file" id="arquivos" multiple>
-    </form>
-    <select name="cores" id="selecaoCores" multiple>
-        <!-- <option value="1" selected>Escolha uma cor</option> -->
-        <option value="1">Amarelo</option>
-        <option value="2">Vermelho</option>
-        <option value="3">Azul</option>
-        <option value="4">Amarelo</option>
-        <option value="5">Vermelho</option>
-        <option value="6">Azul</option>
-    </select>
-
 </body>
 </html>
